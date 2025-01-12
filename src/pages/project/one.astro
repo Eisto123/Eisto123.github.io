@@ -2,19 +2,29 @@
 import Layout from "../../layouts/Layout.astro"
 
 import HeaderSmall from "../../components/HeaderSmall.astro";
+import VideoAlt from "../../components/VideoAlt.astro";
 
-import Gallery from "../../components/Gallery.astro";
-const title = "Project 1";
-const subtitle = "Project 1 info";
+const title = "Virtual Pets";
+const subtitle = "An AR project runs on Meta Quest";
 ---
 
-<Layout title="Project 1">
+<Layout title="Virtual Pets">
   <div>
     <HeaderSmall title={title} subtitle={subtitle} />
   </div>
+  
   <main>
+    <hr>
+    <div class="text-center justify-self-center items-center p-2">
+      <h1 class="font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
+      overview
+    </h1>
+  
+  
+  </div>
+    
     <div class="mb-12">
-      <Gallery />
+      <header>overview</header>
     </div>
   </main>
 </Layout>
