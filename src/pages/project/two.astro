@@ -2,8 +2,9 @@
 import Layout from "../../layouts/Layout.astro";
 
 import HeaderSmall from "../../components/HeaderSmall.astro";
+import Video from "../../components/Video.astro";
+import Heading from "../../components/Heading.astro";
 
-import Table from "../../components/Table.astro";
 const title = "Project 2";
 const subtitle = "Project 2 info";
 ---
@@ -14,7 +15,10 @@ const subtitle = "Project 2 info";
   </div>
   <main>
     <div class="mb-12">
-      <Table />
+      <Heading heading="Gameplay Video" />
+      <Video
+        youtube="https://www.youtube.com/embed/pchpLZZUKr8?si=12CcPgunA8CB0iAX"
+      />
     </div>
   </main>
 </Layout>

@@ -14,6 +14,7 @@ type Props = {
   body: string;
   type?: string;
   repo?: string;
+  image: string;
 };
 ---
 
@@ -33,6 +34,7 @@ type Props = {
                     about: string;
                     repo?: string;
                     type?: string;
+                    image?: string;
                   },
                   index: number
                 ) => {
@@ -43,6 +45,7 @@ type Props = {
                       body={value.about}
                       type={value.type}
                       repo={value.repo}
+                      image={value.image}
                     />
                   );
                 }
