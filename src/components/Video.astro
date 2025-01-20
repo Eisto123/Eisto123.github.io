@@ -19,11 +19,12 @@ const { youtube } = Astro.props;
   .videowrapper {
     float: none;
     clear: both;
-    width: 100%;
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
+    width: 100%; /* Make the container half of its parent width */
     height: 0;
+    padding-bottom: 56.25%; /* 50% of 56.25% for the smaller height */
+    margin: auto;
+    
   }
   .videowrapper iframe {
     position: absolute;

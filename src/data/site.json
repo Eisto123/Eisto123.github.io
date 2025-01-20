@@ -20,7 +20,7 @@
   "social": [
     {
       "title": "GitHub",
-      "href": ""
+      "href": "https://github.com/Eisto123"
     },
     {
       "title": "LinkedIn",
@@ -32,16 +32,16 @@
       "projectTitle": "Virtual pets",
       "href": "../project/one",
       "about": "This is an AR project running in Meta Quest. Players can interact with the virtual pet using their real hand.",
-      "type": "Unity, C#",
-      "repo": "https://github.com",
+      "type": "Unity, C#, AI, Meta Quest MR",
+      "repo": "https://github.com/Eisto123/PetProject",
       "image": "src/assets/PetProjectlook.png"
     },
     {
       "projectTitle": "The Witch of Cibetan",
       "href": "../project/two",
       "about": "This a magic battle game. Player can combine element in anyway they want, and cast the combined spell to knock enemy off!",
-      "type": "Unity, C#",
-      "repo": "https://github.com",
+      "type": "Unity, C#, Card Game",
+      "repo": "https://github.com/Eisto123/The-Witch-of-Cibetan",
       "image": "src/assets/WitchProjectImage.png"
     }
   ]

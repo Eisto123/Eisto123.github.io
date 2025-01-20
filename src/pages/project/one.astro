@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro"
 
 import HeaderSmall from "../../components/HeaderSmall.astro";
-import VideoAlt from "../../components/VideoAlt.astro";
+import Video from "../../components/Video.astro";
 
 const title = "Virtual Pets";
 const subtitle = "An AR project runs on Meta Quest";
@@ -10,22 +10,56 @@ const subtitle = "An AR project runs on Meta Quest";
 
 <Layout title="Virtual Pets">
   <div>
+    
     <HeaderSmall title={title} subtitle={subtitle} />
   </div>
   
   <main>
-    <hr class = "">
-    <div class="text-center justify-self-center items-center p-2 ">
-      <h1 class="font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
-      overview
-    </h1>
-  
-  
-  </div>
-    
-    <div class="mb-12">
-      <header>overview</header>
-    </div>
+    <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
+      Gameplay</h1>
+      <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+          <div class="mt-4 md:mt-0">
+              <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">Feature</h2>
+              <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+                Pet Ai - Behaviour is based on player action, providing fun interaction.
+              </p>
+              <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+                Real Hand interaction - Utilize Meta interaction SDK to recognize real hand input.
+              </p>
+              <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+                Space identify - Utilize Meta utility SDK to recognize area and generate NavMesh.
+              </p>
+              <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+                Animation - Full and natural animation on pet.
+              </p>
+              <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+                SFX - Programmed perfectly to match pet behaviour.
+              </p>
+          </div>
+          <Video youtube="https://www.youtube.com/embed/vF7RwcmvJU4?si=toJfYBHevUX6Z4Vg"/>
+        </div>
+
+        <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
+          Personal contribution</h1>
+        <div class="gap-4 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-4 md:grid md:grid-cols-2 md:grid-rows-3 sm:py-2 lg:px-6">
+          <p class = "col-span-2">
+            
+The project can be found on GitHub with this link (my GitHub name is Eisto123): https://github.com/Eisto123/PetProject
+
+I focused on the interaction and the Meta SDK integration.
+
+I successfully integrated room scanning, distance grab, real hand interaction, and generating nav mesh on the floor from Meta SDK. I build samples from Meta to test out how each element works and extract what we need for our project.
+
+I implement Patting and Feeding interaction in the game, and I create a debug tool to see log messages in the headset.
+I cooperated with the designer in our group, designed the animation graph and created the animation controller in Unity after the AI was done. I set the animation based on the pet's behaviour. I also added sound effects to each of the animations.
+​​​​​​​​​I manage all the assets that the team has created, load them into the project and make sure everything is rendered properly with the texture and accurate size.
+Lastly, I am the QA tester of this project. Every time the team has a new update, I will build it to the headset see the result and provide feedback to the team. This is a very time-consuming process, but I am very familiar with building and testing, so our team is always able to demonstrate the project on time.
+          </p>
+          <img src="https://static.wixstatic.com/media/66c379_90b0e262941a4b10906de6da74e956b4~mv2.png/v1/fill/w_604,h_402,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66c379_90b0e262941a4b10906de6da74e956b4~mv2.png" alt="">
+          <img src="https://static.wixstatic.com/media/66c379_12e6dddc2e0545169e5ca4cfd393d6f1~mv2.png/v1/fill/w_630,h_402,al_c,lg_1,q_85,enc_avif,quality_auto/66c379_12e6dddc2e0545169e5ca4cfd393d6f1~mv2.png" alt="">
+        </div>
+
+
   </main>
 </Layout>
 

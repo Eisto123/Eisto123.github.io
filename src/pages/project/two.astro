@@ -5,21 +5,43 @@ import HeaderSmall from "../../components/HeaderSmall.astro";
 import Video from "../../components/Video.astro";
 import Heading from "../../components/Heading.astro";
 
-const title = "Project 2";
-const subtitle = "Project 2 info";
+const title = "The Witch of Cibetan";
+const subtitle = "https://eisto123.itch.io/the-witch-game";
 ---
 
-<Layout title="Project 2">
+<Layout title="The Witch of Cibetan">
   <div>
     <HeaderSmall title={title} subtitle={subtitle} />
   </div>
   <main>
-    <div class="mb-12">
-      <Heading heading="Gameplay Video" />
-      <Video
-        youtube="https://www.youtube.com/embed/pchpLZZUKr8?si=12CcPgunA8CB0iAX"
-      />
+  <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
+  Gameplay</h1>
+  <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">Feature</h2>
+          <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+            Card system - Full card interaction with juicy feedback.
+          </p>
+          <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+            Enemy - Finite state machine on enemy AI.
+          </p>
+          <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+            Terrain - Procedurally generated and destructible.
+          </p>
+          <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+            Spell - Six unique spells, synthesis through element cards.
+          </p>
+          <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+            Casting - Three different spell canvases for different spell.
+          </p>
+          <p class="mb-4 text-lg text-gray-700 dark:text-gray-400">
+            VFX/SFX - Programmed perfectly to play along with casting spell.
+          </p>
+      </div>
+      <Video youtube="https://www.youtube.com/embed/pchpLZZUKr8?si=12CcPgunA8CB0iAX"/>
     </div>
+
+    <h1 class="font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"></h1>
   </main>
 </Layout>
 
