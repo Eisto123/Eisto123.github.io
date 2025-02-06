@@ -13,8 +13,12 @@
       "href": "/"
     },
     {
-      "title": "Projects",
+      "title": "Personal Projects",
       "href": "/projects"
+    },
+    {
+      "title": "Professional Projects",
+      "href": "/professional"
     }
   ],
   "social": [
@@ -30,7 +34,7 @@
   "projects": [
     {
       "projectTitle": "Virtual pets",
-      "href": "../project/one",
+      "href": "../project/VirtualPets",
       "about": "This is an AR project running in Meta Quest. Players can interact with the virtual pet using their real hand.",
       "type": "Unity, C#, AI, Meta Quest MR",
       "repo": "https://github.com/Eisto123/PetProject",
