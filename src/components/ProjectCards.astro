@@ -6,7 +6,7 @@ interface Props {
   body: string;
   href: string;
   type?: string;
-  repo?: string;
+  repo: string;
   image?: string;
   external?: boolean;
 }
@@ -18,7 +18,7 @@ const { href, projectTitle, body, type, repo,image } = Astro.props;
   class="bg-gray-50 dark:bg-gray-900 border border-gray-200 shadow-lg dark:border-gray-700 rounded-lg"
 >
 
-  <img class="w-full dark:hidden" src={image} alt="dashboard image">
+  <img class="w-full max-h-full dark:hidden" src={image} alt="dashboard image">
     <img class="w-full hidden dark:block" src={image} alt="dashboard image">
   <div class="px-8 py-8">
   {

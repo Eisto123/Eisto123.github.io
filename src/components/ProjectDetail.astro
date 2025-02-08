@@ -9,12 +9,13 @@ interface Props {
   engine: string;
 }
 
-const { title, image, about ,role,teamSize,timeFrame,engine } = Astro.props;
+const { title, image, about ,role,teamSize,timeFrame,engine} = Astro.props;
 ---
 
 <div class="max-w-fit max-h-full mx-auto  bg-stone-100 text-white rounded-lg shadow-lg overflow-hidden">
   <div class="relative">
-    <img src={image} alt={title} class="w-full h-max object-cover" />
+    <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src={image} width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+
     <div class="absolute bottom-0 w-full bg-black bg-opacity-30 p-4">
       <h2 class="text-3xl font-bold">{title}</h2>
     </div>
@@ -24,6 +25,7 @@ const { title, image, about ,role,teamSize,timeFrame,engine } = Astro.props;
     <div class="w-full md:w-1/2 bg-gray-100 p-6 rounded-lg">
       <h3 class="text-xl font-semibold text-gray-900">About</h3>
       <p class="text-gray-900 mt-2">{about}</p>
+
     </div>
     
     <div class="w-full md:w-1/2 bg-gray-100 p-6 rounded-lg">

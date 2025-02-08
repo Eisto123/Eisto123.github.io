@@ -7,7 +7,7 @@ const title = "Virtual Pets";
 const subtitle = "An AR project runs on Meta Quest";
 
 
-const image = "https://static.wixstatic.com/media/66c379_5e60f74a8c6a43bba073ca3712124aa2~mv2.png/v1/fill/w_812,h_457,al_c,q_90,enc_avif,quality_auto/PetProjectlook.png";
+const image = "https://streamable.com/e/r8v36k?autoplay=1&muted=1&nocontrols=1";
 const about = "This project is about using AR technology to integrate a 3D virtual pet into the real world, which allows players to interact with the pet using real hands. The pet will contain a fundamental AI system that will behave according to the player’s interaction.​";
 const role = "Gameplay Programmer, QA";
 const teamSize = "5";
@@ -23,6 +23,15 @@ const engine = "Unity";
 
   
   <main class="bg-gray-100">
+    <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
+      Project Links</h1>
+      <p class="mt-2 py-8">
+        <a href="https://github.com/Eisto123/PetProject" class="text-red-400 font-bold hover:underline">
+          GitHub Repository
+        </a>
+        
+      </p>
+
     <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
       Feature</h1>
       <div class="items-center py-2 px-4 mx-auto max-w-screen-xl xl:gap-8 md:grid md:grid-cols-2 sm:py-4 lg:px-6 rounded-lg ">
@@ -40,54 +49,36 @@ const engine = "Unity";
         <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl pb-6">
           Technical Overview</h1>
         <div class="mx-auto text-gray-900 px-1">
-          <p class="mt-2">
-            <a href="https://github.com/Eisto123/PetProject" class="text-red-400 font-bold hover:underline">
-              GitHub Repository
-            </a>
-            
-          </p>
           
-          <p class="mt-2">
-            By owning a headset, I split the development work with my teammate so that I focus on the 
-            interaction and the <strong>Meta SDK integration</strong>.
+          <h2 class="text-2xl">Finite State Machine</h2>
+          <p class="mt-2 pb-2">
+          The dragon AI depends on a finite state machine. It changes behaviour based on user input.
+          The states follow the following user journey below.
           </p>
+
+          <img src="https://static.wixstatic.com/media/66c379_2a6b1582e03b4bbc9fbf72f36545e054~mv2.png/v1/fill/w_542,h_509,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66c379_2a6b1582e03b4bbc9fbf72f36545e054~mv2.png" alt="User Journey" class="rounded-lg place-self-center object-cover">
+
           
-          <p class="mt-2">
-            I successfully integrated <strong>room scanning</strong>, <strong>distance grab</strong>, 
-            <strong>real hand interaction</strong>, and <strong>generating nav mesh</strong> on the floor from 
-            Meta SDK. I built samples from Meta to test out how each element works and 
-            extract what we need for our project.
+          <h2 class="text-2xl">Real Hand Interaction</h2>
+          <p class="mt-2 pb-2">
+            This project utilises real-world interaction to create a natural experience of interacting with pets. Meta SDK supports this technology and we build patting and fetch ball interaction upon this fundamental structure.
           </p>
+          <img src="https://static.wixstatic.com/media/66c379_9333659c786044ac906e8c8119b1f2e3~mv2.png/v1/fill/w_600,h_401,al_c,q_85,enc_avif,quality_auto/66c379_9333659c786044ac906e8c8119b1f2e3~mv2.png" alt="Hand Interaction" class="rounded-lg place-self-center object-cover">
           
-          <p class="mt-2">
-            I implemented <strong>Patting</strong> and <strong>Feeding</strong> interaction in the game, and I created a 
-            <strong>debug tool</strong> to see log messages in the headset.
+          <h2 class="text-2xl">Room Scanning</h2>
+          <p class="mt-2 pb-2">
+          This project uses the spatial data in the Meta Quest device. Our project requests permission to utilize the spatial data to build colliders and navmesh around the room.
           </p>
+          <img src="https://static.wixstatic.com/media/66c379_a5c817608dba4dc2ad976a64f92a3aa1~mv2.png/v1/fill/w_398,h_119,al_c,lg_1,q_85,enc_avif,quality_auto/66c379_a5c817608dba4dc2ad976a64f92a3aa1~mv2.png" alt="Hand Interaction" class="rounded-lg place-self-center object-cover">
           
-          <p class="mt-2">
-            I cooperated with the designer in our group, designed the animation graph, 
-            and created the <strong>animation controller</strong> in Unity after the AI was done. 
-            I set the animation based on the pet's behaviour. I also added sound effects 
-            to each of the animations.
+          <h2 class="text-2xl">Pet Animation</h2>
+          <p class="mt-2 pb-2">
+          Through a structured state machine, we create an animation controller below that switches animation states based on pet behaviours.
           </p>
-          
-          <p class="mt-2">
-            I managed all the assets that the team created, loaded them into the project, and ensured 
-            everything was rendered properly with the correct texture and size.
-          </p>
-          
-          <p class="mt-2">
-            Lastly, I was the <strong>QA tester</strong> for this project. Every time the team had a new update, I 
-            built it to the headset, reviewed the results, and provided feedback to the 
-            team. This was a time-consuming process, but I was very familiar with building and testing, 
-            ensuring our team could always demonstrate the project on time.
-          </p>
+          <img src="https://static.wixstatic.com/media/66c379_c2601d4140c24a53b334e717f274b830~mv2.png/v1/fill/w_600,h_307,al_c,q_85,enc_avif,quality_auto/66c379_c2601d4140c24a53b334e717f274b830~mv2.png" alt="Hand Interaction" class="rounded-lg place-self-center object-cover">
         </div>
         
-        <div class="mt-6 flex gap-4 h-96">
-          <img src="https://static.wixstatic.com/media/66c379_12e6dddc2e0545169e5ca4cfd393d6f1~mv2.png/v1/fill/w_315,h_201,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66c379_12e6dddc2e0545169e5ca4cfd393d6f1~mv2.png" alt="Feature Image 1" class="w-1/2 rounded-lg object-cover">
-          <img src="https://static.wixstatic.com/media/66c379_eeec1d3cdac14ebd9d7d9b702b54a29d~mv2.png/v1/fill/w_417,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66c379_eeec1d3cdac14ebd9d7d9b702b54a29d~mv2.png" alt="Feature Image 2" class="w-1/2 rounded-lg object-cover">
-        </div>
+        
 
         <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl pb-6">
         What I learn</h1>
@@ -113,6 +104,10 @@ const engine = "Unity";
             communication, and continuously providing feedback, we ensured smooth collaboration. My ability to integrate contributions from different 
             team members and iterate based on testing feedback was essential in delivering a cohesive and high-quality experience.
         </p>
+        </div>
+        <div class="mt-6 flex gap-4 h-96">
+          <img src="https://static.wixstatic.com/media/66c379_12e6dddc2e0545169e5ca4cfd393d6f1~mv2.png/v1/fill/w_315,h_201,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66c379_12e6dddc2e0545169e5ca4cfd393d6f1~mv2.png" alt="Feature Image 1" class="w-1/2 rounded-lg object-cover">
+          <img src="https://static.wixstatic.com/media/66c379_eeec1d3cdac14ebd9d7d9b702b54a29d~mv2.png/v1/fill/w_417,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66c379_eeec1d3cdac14ebd9d7d9b702b54a29d~mv2.png" alt="Feature Image 2" class="w-1/2 rounded-lg object-cover">
         </div>
 
 
