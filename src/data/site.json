@@ -38,7 +38,7 @@
       "about": "This is an AR project running in Meta Quest. Players can interact with the virtual pet using their real hand.",
       "type": "Unity, C#, AI, Meta Quest MR",
       "repo": "https://github.com/Eisto123/PetProject",
-      "image": "https://i.ibb.co/DfJsJ7MT/player-throw-ball-1.gif"
+      "image": "https://i.ibb.co/5X2Sn2N6/virtual-pet.gif"
     },
     {
       "projectTitle": "Help! Bubble!",
@@ -46,7 +46,7 @@
       "about": "Help! Bubble is a 2D platformer game where Mentos collide with Coke. Play as a Shachiku in a stylistic bar, and have fun with the bubbles!",
       "type": "Unity, C#, Platformer, Game Jam, Team work",
       "repo": "https://github.com/PeihengCai/ColaXMentos",
-      "image": "https://img.itch.zone/aW1nLzE5NjQ5NTk3LmdpZg==/original/9fswjp.gif"
+      "image": "https://i.ibb.co/fdtTrv8T/Help-Bubble.gif"
     },
     {
       "projectTitle": "The Witch of Cibetan",
@@ -54,7 +54,7 @@
       "about": "This a magic battle game. Player can combine element in anyway they want, and cast the combined spell to knock enemy off!",
       "type": "Unity, C#, Card Game",
       "repo": "https://github.com/Eisto123/The-Witch-of-Cibetan",
-      "image": "https://static.wixstatic.com/media/66c379_47a3ea4c3dde42639fe25b1164ba0c1f~mv2.png/v1/fill/w_1002,h_564,al_c,q_90,enc_avif,quality_auto/WitchProjectImage.png"
+      "image": "https://i.ibb.co/sdYjPPqG/The-witch-of-cibetan.gif"
     }
   ],
   "professional": [
