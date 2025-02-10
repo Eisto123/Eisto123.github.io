@@ -41,12 +41,36 @@
       "image": "https://i.ibb.co/DfJsJ7MT/player-throw-ball-1.gif"
     },
     {
+      "projectTitle": "Help! Bubble!",
+      "href": "../project/HelpBubble",
+      "about": "Help! Bubble is a 2D platformer game where Mentos collide with Coke. Play as a Shachiku in a stylistic bar, and have fun with the bubbles!",
+      "type": "Unity, C#, Platformer, Game Jam, Team work",
+      "repo": "https://github.com/PeihengCai/ColaXMentos",
+      "image": "https://img.itch.zone/aW1nLzE5NjQ5NTk3LmdpZg==/original/9fswjp.gif"
+    },
+    {
       "projectTitle": "The Witch of Cibetan",
-      "href": "../project/two",
+      "href": "../project/TheWitchofCibetan",
       "about": "This a magic battle game. Player can combine element in anyway they want, and cast the combined spell to knock enemy off!",
       "type": "Unity, C#, Card Game",
       "repo": "https://github.com/Eisto123/The-Witch-of-Cibetan",
       "image": "https://static.wixstatic.com/media/66c379_47a3ea4c3dde42639fe25b1164ba0c1f~mv2.png/v1/fill/w_1002,h_564,al_c,q_90,enc_avif,quality_auto/WitchProjectImage.png"
+    }
+  ],
+  "professional": [
+    {
+      "projectTitle": "HAAK",
+      "href": "../project/HAAK",
+      "about": "HAAK is a platformer Metroidvania game with a Chinese post-apocalyptic aesthetic. It has more than 1 million downloads all mobile platform.",
+      "type": "MeroidVania, Unity, Mobile Game",
+      "image": "https://i.ibb.co/FbWHVr41/banner1280x720.png"
+    },
+    {
+      "projectTitle": "Imortal Record",
+      "href": "../project/ImortalRecord",
+      "about": "Imortal Record is a deck-building game that takes place in a Chinese Xianxia setting. It uniquely combines deck building with self-cultivation, resulting in a one-of-a-kind gaming experience.",
+      "type": "DBG, Unity, Mobile Game",
+      "image": "https://i.ibb.co/tPwzVLFf/1-1920x1080.jpg"
     }
   ]
 }

@@ -4,12 +4,12 @@ interface Props {
   image: string;
   about: string;
   role: string;
-  teamSize: string;
+  projectstatus: string;
   timeFrame: string;
-  engine: string;
+  data: string;
 }
 
-const { title, image, about ,role,teamSize,timeFrame,engine} = Astro.props;
+const { title, image, about ,role,projectstatus,timeFrame,data} = Astro.props;
 ---
 
 <div class="max-w-fit max-h-full mx-auto  bg-stone-100 text-white rounded-lg shadow-lg overflow-hidden">
@@ -31,10 +31,10 @@ const { title, image, about ,role,teamSize,timeFrame,engine} = Astro.props;
     <div class="w-full md:w-1/2 bg-gray-100 p-6 rounded-lg">
       <h3 class="text-xl font-semibold text-gray-900">Project Info</h3>
       <ul class="text-gray-900 mt-2 space-y-1">
-        <li><strong>Role:</strong> {role}</li>
-        <li><strong>Team Size:</strong> {teamSize}</li>
-        <li><strong>Time Frame:</strong> {timeFrame}</li>
-        <li><strong>Engine:</strong> {engine}</li>
+        <li> <strong>Role:</strong> {role}</li>
+        <li> <strong>Project Status:</strong> {projectstatus}</li>
+        <li> <strong>Time Frame:</strong> {timeFrame}</li>
+        <li> <strong>Data:</strong> {data}</li>
       </ul>
     </div>
   </div>

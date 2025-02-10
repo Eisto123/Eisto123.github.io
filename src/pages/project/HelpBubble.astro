@@ -1,0 +1,126 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import Video from "../../components/Video.astro";
+import ProjectDetail from "../../components/ProjectDetail.astro";
+
+const title = "Help! Bubble!";
+const image = "https://ggjv4.s3.us-west-1.amazonaws.com/files/styles/flexslider_full/s3/games/2025/827224/screenshot/Untitled%20design%20%283%29.png?VersionId=eeD28JbiUBLjO3EcASIazV2bcL.1scUS&itok=RedrOe2L";
+const about = "This is a game created during GGJ2025, and it is also attend A Maze. Berlin 2025 Award. Help! Bubble is a 2D platformer game where Mentos collide with Coke. Play as a Shachiku in a stylistic bar, and have fun with surges and bubbles in the night!​";
+const role = "Game Designer, Gameplay Programmer, Audio Designer";
+const teamSize = "6";
+const timeFrame = "48hrs (Game Jam) + 48hrs (Polish)";
+const engine = "Unity";
+---
+
+<Layout title="Help! Bubble!">
+  <div>
+    <ProjectDetail title ={title} image ={image} about={about} role={role} teamSize={teamSize} timeFrame={timeFrame} engine={engine}
+    />
+  </div>
+  <main>
+    <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
+      Project Links</h1>
+      <div class=" flex text-gray-900 space-x-8">
+        <p class="mt-2 py-8">
+          <a href="https://churong.itch.io/helpbubble" class="text-red-400 font-bold hover:underline">
+            itch.io Page
+          </a>
+        </p>
+        <p class="mt-2 py-8">
+          <a href="https://github.com/PeihengCai/ColaXMentos" class="text-red-400 font-bold hover:underline">
+            GitHub Repository
+          </a>
+        </p>
+      </div>
+
+
+    <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl">
+      Feature</h1>
+      <div class="items-center py-2 px-4 mx-auto max-w-screen-xl xl:gap-8 md:grid md:grid-cols-2 sm:py-4 lg:px-6 rounded-lg">
+        <div class="max-w-3xl mx-auto text-gray-900 p-6">
+            <p class="mt-2 p-1">
+                <strong>Level Design</strong> – Three unique levels featuring different Cola x Mentos interactions.
+            </p>
+            <p class="mt-2 p-1">
+                <strong>Riding Cola Bottles</strong> – Fly through levels propelled by bottled cola.
+            </p>
+            <p class="mt-2 p-1">
+                <strong>Narrative</strong> – A thrilling escape from East Asian alcoholic culture.
+            </p>
+            <p class="mt-2 p-1">
+                <strong>Hand-Drawn Animation</strong> – Fully animated player character with fluid movements.
+            </p>
+            <p class="mt-2 p-1">
+                <strong>Level Environment</strong> – Bars transformed into platforming challenges using everyday items.
+            </p>
+        </div> 
+      <Video youtube="https://www.youtube.com/embed/lOCnwHtVxgA?si=6A5Cr9bSRedwdPAp"/>
+      </div>
+
+      <div class="mx-auto text-gray-900 px-1">
+    
+        <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl pb-6">
+            Personal Contribution
+        </h1>
+    
+        <h2 class="text-2xl">Lead Game Design</h2>
+        <p class="mt-2 pb-2">
+            I designed the core <strong>Cola x Mentos</strong> interaction mechanics**, forming the foundation of gameplay. These include:
+            bouncing the player with cola bubbles, riding cola bottles to fly, and exploding for environmental destruction.
+            To maximize emergent gameplay, I designed interactions where mechanics could affect each other—for example, 
+            flying cola bottles can be redirected by hitting cola bubbles, creating dynamic chain reactions.
+            However, due to time constraints, we focused on refining the feel and responsiveness of individual interactions rather than debugging every possible combination. We might refine this concept on further projects.
+        </p>
+    
+        <h2 class="text-2xl">Level Design</h2>
+        <p class="mt-2 pb-2">
+            I structured the game’s <strong>level progression</strong> and <strong>interactive narrative</strong>, integrating gameplay mechanics seamlessly into the story.
+            I deconstructed the bar environment, transforming everyday items into platforming puzzles while maintaining visual coherence.
+            Interactive elements were placed strategically based on difficulty scaling, ensuring a smooth player experience while maintaining the game's artistic vision.
+            Additionally, I used <strong>Cinemachine</strong> for dynamic camera control, enhancing storytelling and guiding player focus.
+        </p>
+    
+        <h2 class="text-2xl">Throwing Mechanics</h2>
+        <p class="mt-2 pb-2">
+            I implemented the <strong>precision-based Mentos throwing system</strong>. Players can charge their throw by holding a button, dynamically adjusting the throwing force.
+            A trajectory preview line provides visual feedback, ensuring accurate targeting. Upon release, the Mentos follows the calculated path, maintaining full consistency with player input.
+        </p>
+    
+        <h2 class="text-2xl">SFX & BGM</h2>
+        <p class="mt-2 pb-2">
+            I composed the original background music (BGM) and implemented sound effects (SFX) to heighten the gameplay.
+            All audio was managed via a custom <strong>Audio Manager</strong> script, featuring Play Sound and Fade Out functions for seamless audio transitions.
+            By making it a global instance, I ensured audio could be accessed and triggered effortlessly throughout the game.
+        </p>
+    
+    </div>
+
+
+        <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl pb-6">
+          What I Learn
+      </h1>
+      <div class="mx-auto text-gray-900 pb-16 px-1">
+        <p class="mt-2">
+            Participating in a <strong>48-hour game jam</strong> was an intense yet rewarding experience. 
+            I learned how to manage pressure and successfully deliver a playable game within the tight deadline. 
+            This reinforced the significance of <strong>project management</strong>—we adhered to a <strong>skateboard-first design approach</strong>, 
+            allowing us to test interactions early without waiting for final assets. This methodology was key to our on-time delivery.
+        </p>
+        <p class="mt-2">
+            Another invaluable lesson was <strong>teamwork</strong>. As a lead designer, I prioritized collaboration over control, 
+            ensuring that every team member—artists, programmers, and designers—had the creative freedom to contribute their best work. 
+            I believe great leadership is about <strong>empowering the team</strong>, not dictating every detail. The <strong>astonishing art</strong> came from our talented artists, 
+            and the <strong>fluid movement</strong> was the result of our programmers’ ingenuity. My role was to unify these elements into a cohesive experience.
+        </p>
+        <p class="mt-2">
+            I strongly believe that <strong>great leadership helps the team become the best version of themselves</strong>. 
+            Supporting and trusting your team fosters innovation and motivation. <strong>Don’t be a dictator—be a supporter</strong>. 
+            That mindset was crucial in making our game a success.
+        </p>
+    </div>
+
+  </main>
+</Layout>
+
+<style></style>

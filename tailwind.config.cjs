@@ -32,6 +32,11 @@ module.exports = {
       animation: {
         'skew-scroll': 'skew-scroll 20s linear infinite',
       },
+      height: {
+        '128': '32rem', // 512px
+        '144': '36rem', // 576px
+        '160': '40rem', // 640px
+      }
     },
       keyframes: {
         'skew-scroll': {
