@@ -33,6 +33,14 @@
   ],
   "projects": [
     {
+      "projectTitle": "Puppy in Home",
+      "href": "../project/PuppyInHome",
+      "about": "Puppy in Home is a virtual reality (VR) game that blends puzzle solving with emotional storytelling",
+      "type": "Unity, VR, C#, Immersive Game",
+      "repo": "https://github.com/Eisto123/MazeBall_VR",
+      "image": "https://i.ibb.co/Z6HDxksj/puppy-In-Home.gif"
+    },
+    {
       "projectTitle": "Virtual pets",
       "href": "../project/VirtualPets",
       "about": "This is an AR project running in Meta Quest. Players can interact with the virtual pet using their real hand.",
