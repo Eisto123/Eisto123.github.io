@@ -67,6 +67,13 @@
   ],
   "professional": [
     {
+      "projectTitle": "MoPT Training Simulator",
+      "href": "../project/MoPT",
+      "about": "VR simulation training application designed to teach and reinforce the procedural steps of IV cannulation through immersive virtual reality",
+      "type": "VR, Training, Unity",
+      "image": "https://i.ibb.co/0Vm73tXq/2025-08-05-153440.png"
+    },
+    {
       "projectTitle": "HAAK",
       "href": "../project/HAAK",
       "about": "HAAK is a platformer Metroidvania game with a Chinese post-apocalyptic aesthetic. It has more than 1 million downloads all mobile platform.",

@@ -1,0 +1,72 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Video from "../../components/Video.astro";
+import ProfessionalDetail from "../../components/ProfessionalDetail.astro";
+
+const title = "MoPT Training Simulator";
+const image = "https://i.ibb.co/0Vm73tXq/2025-08-05-153440.png";
+const about = "This is a VR simulation training application designed to teach and reinforce the procedural steps of IV cannulation through immersive virtual reality. The software provides a realistic and interactive training environment where users can practice the procedure step by step. The system gives real-time feedback based on user performance, along with suggestions for improvement. Upon completion of the training module, users are expected to be proficient in the IV cannulation process.​";
+const role = "XR Developer";
+const projectstatus = "Completed";
+const timeFrame = "2 months";
+const data = "Not released yet";
+---
+
+<Layout title="MoPT Training Simulator">
+  <div>
+    <ProfessionalDetail title ={title} image ={image} about={about} role={role} projectstatus={projectstatus} timeFrame={timeFrame} data={data}
+    />
+  </div>
+
+  <main>
+      <div class="mx-auto text-gray-900 px-1">
+        <Video youtube="https://www.youtube.com/embed/lJdY2utok7Y?si=CXDVfU5Lx0Wlonsm"/>  
+        <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl pb-6">
+            Personal Contribution
+        </h1>
+        <p class="mt-2 pb-2">Due to confidentiality agreements, only selected elements of the implementation and design are presented below.</p>
+    
+        <h2 class="text-2xl">System Architecture</h2>
+        <p class="mt-2 pb-2">
+            I designed a modular framework using an event-driven architecture to ensure low coupling between components, enabling more efficient collaborative development. The flow of interaction is structured as follows:
+            <strong>Interaction → QuestManager → Pass/Fail Evaluation → Next Interaction / Restart</strong>
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4 pb-8">
+          <img src="https://i.ibb.co/ks4TM4qn/01-00-00-45-13-Still004.png" alt="Flowchart" class="rounded-lg place-self-center object-cover h-80">
+          <img src="https://i.ibb.co/0Vm73tXq/2025-08-05-153440.pnghttps://i.ibb.co/kg5kxcSk/image-5.png" alt="Architecture" class="rounded-lg place-self-center object-cover h-80">
+        </div>
+        <h2 class="text-2xl">Interaction Design</h2>
+        <p class="mt-2 pb-2">
+            I implemented interaction logic and hand gesture recognition using the Meta SDK to enhance realism in object manipulation.
+            <li>Developed a responsive interaction system for the cannula, handling multiple states and gesture-based transitions.</li>
+            <li>Implemented realistic interactions such as alcohol disinfection to simulate proper procedural hygiene process.</li>
+        </p>
+              <div class="flex flex-col md:flex-row justify-center gap-4 pb-8">
+                <img src="https://i.ibb.co/yBFMFgxc/Flush.gif" alt="KV1" class="rounded-lg place-self-center object-cover h-40">
+                <img src="https://i.ibb.co/JV5kRy5/Swab.gif" alt="KV2" class="rounded-lg place-self-center object-cover h-40">
+                <img src="https://i.ibb.co/p6Zdw85r/Remove-needle.gif" alt="KV2" class="rounded-lg place-self-center object-cover h-40">
+              </div>
+    
+    </div>
+
+
+        <h1 class="font-bold tracking-tight mt-8 text-gray-900 dark:text-white sm:text-4xl pb-6">
+          What I Learn
+      </h1>
+      <div class="mx-auto text-gray-900 pb-16 px-1">
+        <p class="mt-2">
+            <strong>Well-structured system architecture</strong> is fundamental for scalable and collaborative development.
+        </p>
+        <p class="mt-2">
+            <strong>Gesture recognition</strong> in VR still has technical limitations; in practical software development, it is more effective to apply interdisciplinary knowledge to find optimal solutions rather than pursue perfection in one domain.
+        </p>
+        <p class="mt-2">
+            Always design with the <strong>end-user</strong> in mind—for many users unfamiliar with VR, onboarding and guided tutorials are essential to ensure usability and a smooth learning curve.
+        </p>
+    </div>
+
+
+  </main>
+</Layout>
+
+<style></style>
